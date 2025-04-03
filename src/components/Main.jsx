@@ -1,4 +1,4 @@
-const Main = () => <main>Main</main>
+const Main = () => <main>  Content goes here  </main>
 
 export default Main;
 

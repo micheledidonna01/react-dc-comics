@@ -1,2 +1,58 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*INTESTAZIONE*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header figure{
+    display: flex;
+    align-items: center;
+}
+header img{
+    height: 60px;
+}
+
+.menu-li {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    
+}
+
+.menu-li li {
+    border-bottom: 2px solid transparent;
+}
+
+.menu-li li:hover {
+    border-bottom: 2px solid #0582F9;
+    color: #0582F9;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
 
 
+/*CORPO*/
+
+main{
+    background-color: #000;
+    height: 130px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
