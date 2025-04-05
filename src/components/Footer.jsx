@@ -10,24 +10,7 @@ import DivMainFooter from "./DivMainFooter"
 
 const Footer = () => {
 
-let arrayMainFooter=[
-    {
-        title:'DC COMICS',
-        element: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
-    },
-    {
-        title:'SHOP',
-        element: ['Shop DC', 'Shop DC Collectibles']
-    },
-    {
-        title:'DC',
-        element: ['Terms Of Use', 'Privacy policy(New)', 'Ad Choices', 'Adverting', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us']
-    },
-    {
-        title:'SITES',
-        element: ['DC', 'MAD', 'DC Kids', 'DC Universe', 'DC Power Visa']
-    }
-];
+let title = ['DC COMICS','SHOP','DC','SITES'];
 
 return <footer>
 
@@ -38,10 +21,7 @@ return <footer>
     <div className="dad-main-footer">
         <div className="main-footer">
             <nav>
-                <DivMainFooter title = {arrayMainFooter[0].title} element = {arrayMainFooter[0].element}/>
-                <DivMainFooter title = {arrayMainFooter[1].title} element = {arrayMainFooter[1].element}/>
-                <DivMainFooter title = {arrayMainFooter[2].title} element = {arrayMainFooter[2].element}/>
-                <DivMainFooter title = {arrayMainFooter[3].title} element = {arrayMainFooter[3].element}/>
+                <DivMainFooter title = {title} />
             </nav>
 
             <div className="bg-image">    </div>
