@@ -59,16 +59,70 @@ a {
 /*CORPO*/
 
 main {
-    padding: 0 50px;
     background-color: #000;
-    height: 130px;
     color: #FFF;
-    display: flex;
     align-items: center;
+    padding-bottom: 40px;
 }
 
+main .background-main {
+    background-image: url(./assets/img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
 
+main .current-series {
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+    transform: translate(0, 50%);
+    background-color: #0582F9;
+    font-weight: bold;
+    padding: 10px;
+}
 
+main ul {
+    padding: 40px 50px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: calc((100% - 150px) /6);
+    gap: 3px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    word-wrap: break-word;
+}
+
+.comic-image {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.btn-more {
+    background-color: #0582F9;
+    font-weight: bold;
+    padding: 10px;
+    color: #FFF;
+    border-color: #0582F9;
+    display: block;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
 
 /*PIEDE*/
 footer .dad-info-footer {
